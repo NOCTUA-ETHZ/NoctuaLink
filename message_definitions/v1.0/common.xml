@@ -8114,5 +8114,24 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+    <message id="12921" name="FUEL_CELL">
+      <description>Fuel cell status message carrying sensor and power data</description>
+      <field type="uint64_t" name="timestamp">Time since system boot (microseconds)</field>
+      <field type="float" name="tankpressure">Tank pressure in bar</field>
+      <field type="float" name="regpressure">Regulator pressure in bar</field>
+      <field type="float" name="voltage">Battery/system voltage in volts</field>
+      <field type="float" name="outputpower">Output power in watts</field>
+      <field type="float" name="spmpower">SPM power in watts</field>
+      <field type="float" name="battpower">Battery power in watts</field>
+      <field type="int32_t" name="psustate">Power Supply Unit state (bitfield or enum)</field>
+      <field type="uint8_t[2]" name="info">Additional info (2-byte array)</field>
+    </message>
+    <message id="201" name="NOCTUA_SENSORS">
+      <description>Internal status including temperature, humidity, and hydrogen levels</description>
+      <field type="uint64_t" name="timestamp">Time since system boot (microseconds)</field>
+      <field type="float" name="temperature">Temperature in degrees Celsius</field>
+      <field type="float" name="humidity">Relative humidity in percent</field>
+      <field type="float" name="hydrogen">Hydrogen concentration (units depend on sensor, e.g., ppm)</field>
+    </message>
   </messages>
 </mavlink>
