@@ -8126,7 +8126,7 @@
       <field type="int32_t" name="psustate">Power Supply Unit state (bitfield or enum)</field>
       <field type="uint8_t[2]" name="info">Additional info (2-byte array)</field>
     </message>
-    <message id="201" name="NOCTUA_SENSORS">
+    <message id="12922" name="NOCTUA_SENSORS">
       <description>Internal status including temperature, humidity, and hydrogen levels</description>
       <field type="uint64_t" name="timestamp">Time since system boot (microseconds)</field>
       <field type="float" name="temperature">Temperature in degrees Celsius</field>
